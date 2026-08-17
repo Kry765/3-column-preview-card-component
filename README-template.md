@@ -15,7 +15,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -39,8 +38,8 @@ Mobile View
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kry765/3-column-preview-card-component
+- Live Site URL: https://kry765.github.io/3-column-preview-card-component/
 
 ## My process
 
