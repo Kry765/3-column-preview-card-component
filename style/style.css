@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Colors*/
+  --color-gold-500: hsl(31, 77%, 52%);
+  --color-cyan-800: hsl(184, 100%, 22%);
+  --color-green-950: hsl(179, 100%, 13%);
+  /* Typography */
+  --heading-transparent-white: hsl(0, 0%, 95%);
+  --text-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --heading-text-size: 700;
+  --font-text-size: 300;
+  /*Fonts*/
+  --font-header: "Big Shoulders", sans-serif;
+  --font-paragraph: "Lexend Deca", sans-serif;
+}
+
+/*Mobile*/
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4em 2em;
+}
+
+.card-wrapper {
+  padding: 2em 2em;
+}
+
+.header-card {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: var(--heading-transparent-white);
+  font-family: var(--font-header);
+  font-weight: var(--heading-text-size);
+  margin: 1em 0;
+}
+
+.paragraph-card {
+  line-height: 1.6;
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-text-size);
+  color: var(--text-transparent-white);
+}
+
+.car-card {
+  font-weight: var(--font-text-size);
+  button {
+    font-family: var(--font-paragraph);
+    border: none;
+    padding: 1em 2em;
+    margin: 1.4em 0;
+    border-radius: 24px;
+    border: 2px solid transparent;
+  }
+  button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+  }
+}
+
+.sedans-card {
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
+  background-color: var(--color-gold-500);
+  button {
+    color: var(--color-gold-500);
+    background-color: var(--heading-transparent-white);
+  }
+}
+
+.suvs-card {
+  background-color: var(--color-cyan-800);
+  button {
+    color: var(--color-cyan-800);
+    background-color: var(--heading-transparent-white);
+  }
+}
+
+.luxury-card {
+  border-bottom-right-radius: 0.6em;
+  border-bottom-left-radius: 0.6em;
+  background-color: var(--color-green-950);
+  button {
+    color: var(--color-green-950);
+    background-color: var(--heading-transparent-white);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .car-card {
+    max-width: 608px;
+    .card-wrapper {
+      min-width: 100%;
+    }
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1440px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .car-card {
+    min-height: 500px;
+    max-width: 307px;
+    margin: 0;
+  }
+  .sedans-card {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.6em;
+  }
+  .luxury-card {
+    border-top-right-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    border-bottom-left-radius: 0em;
+    background-color: var(--color-green-950);
+    button {
+      color: var(--color-green-950);
+      background-color: var(--heading-transparent-white);
+    }
+  }
+}
